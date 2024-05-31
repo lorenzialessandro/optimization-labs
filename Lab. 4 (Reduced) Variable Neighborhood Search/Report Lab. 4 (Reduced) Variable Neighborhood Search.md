@@ -7,10 +7,10 @@ As seen for most of the optimization search algorithms, a **good starting point*
 
 In order to have a good analysis of the effect of the initial solution, I have generated a random binary vector `initial_point`. Based on the starting solution picked, the number of iterations varies; there are VNS lunches with more than 300 iterations and others with less than 140.
 
-| `vns_result`                    | `vns_result`                    |
-| ------------------------------- | ------------------------------- |
-| [0. 1. 0. 0. 0. 1. 1. 1. 1. 1.] | [0. 0. 0. 0. 1. 1. 1. 1. 1. 1.] |
-| ![image](img1.png)          | ![image](img2.png)          |
+| `vns_result`                                                              | `vns_result`                    |
+| ------------------------------------------------------------------------- | ------------------------------- |
+| [0. 1. 0. 0. 0. 1. 1. 1. 1. 1.]                                           | [0. 0. 0. 0. 1. 1. 1. 1. 1. 1.] |
+| ![image](img/img1.png%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20) | ![image](img/img2.png%20)       |
 
 Even with this simple example, we can also observe that the **starting solution is also a sort of exploration-exploitation trade-off**. With a worse starting point, in fact, the algorithm is forced to spend time exploring new zones of the solution space.
 
@@ -21,7 +21,7 @@ Here we can observe the VNS launched with the same function with the minimum and
 
 | `kmax = 1`             | `kmax = 11`            |
 | ---------------------- | ---------------------- |
-| ![image](img3.png) | ![image](img4.png) |
+| ![image](img/img3.png) | ![image](img/img4.png) |
 
 The results are quite clear: by setting **the number of iterations too low, we are not analyzing the current neighborhood structure properly;** on the other side, if this parameter is **too large, we are wasting iterations** in the structure, and we will instead prefer to move on.
 
@@ -45,7 +45,7 @@ So what I expect is that `flip1` might be slower compared to `flip2` and `flip3`
 
 | `flip1`                 | `flip2`                 | `flip3`                 |
 | ----------------------- | ----------------------- | ----------------------- |
-| ![image](flip2.png) | ![image](flip1.png) | ![image](flip3.png) |
+| ![image](img/flip2.png) | ![image](img/flip1.png) | ![image](img/flip3.png) |
 
 In general, in order to reach the best solution it seems better to have a **generation of neighborhood quite "deep" instead of a less diversification**. Again, the solution is a trade-off balancement.  
 
@@ -55,7 +55,7 @@ Even if with this simple problem the choice between best improvement and first i
 
 | best improvement                  | first improvement           |
 | --------------------------------- | --------------------------- |
-| ![best_imp.png](best_imp.png) | ![first.png](first.png) |
+| ![best_imp.png](img/best_imp.png) | ![first.png](img/first.png) |
 
 
 ---
@@ -69,7 +69,7 @@ Here we can notice the general **decrement of iterations required by RVNS** in c
 
 | VNS                    | RVNS                 |
 | ---------------------- | -------------------- |
-| ![image](img1.png) | ![image](R1.png) |
+| ![image](img/img1.png) | ![image](img/R1.png) |
 ### `kmax`
 The max number of iteration here is less evident since the "steps are larger" and in general, for the considered problem, even with a large `kmax` the computational cost is restrained but the solution improves, so it **seems better to have this parameter relatively high**.    
 
@@ -81,7 +81,7 @@ The fact that the `flip1` flips exactly `k` bits guarantee a better trade-off in
 
 | `flip1`               | `flip2`               | `flip3`               |
 | --------------------- | --------------------- | --------------------- |
-| ![image](ff1.png) | ![image](ff2.png) | ![image](ff3.png) |
+| ![image](img/ff1.png) | ![image](img/ff2.png) | ![image](img/ff3.png) |
 
 It's true that due to both the simplicity of the problem and the use of a reduced neighborhood set, the effect of how the neighborhoods are generated seems smaller in the RVNS than in the VNS, but in general, we know that this is a **crucial point** for both algorithms.
 
