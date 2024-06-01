@@ -33,10 +33,10 @@ Best location: [467.75308642 455.11111111]
 
 Visually:
 
-| eps = 0.1                            | eps = 1                              |
-| ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240601111202](Pasted%20image%2020240601111202.png) | ![Pasted image 20240601111142](Pasted%20image%2020240601111142.png) |
-| ![Pasted image 20240601111224](Pasted%20image%2020240601111224.png) | ![Pasted image 20240601111148](Pasted%20image%2020240601111148.png) |
+| eps = 0.1                                                               | eps = 1                                                                 |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| ![Pasted image 20240601111202](img/Pasted%20image%2020240601111202.png) | ![Pasted image 20240601111142](img/Pasted%20image%2020240601111142.png) |
+| ![Pasted image 20240601111224](img/Pasted%20image%2020240601111224.png) | ![Pasted image 20240601111148](img/Pasted%20image%2020240601111148.png) |
 
 As sad before **the choice of the benchmark function is relevant**, for example with *similar* function like the `Ackley` and the `GoldsteinAndPrice`, that are both non-convex and multimodal with global minimum near local optima, even increasing `eps` there are not changes. Furthermore with other functions, like the `Himmelblau`, the improvements (and so the parameter effects) are really small:
 
@@ -67,10 +67,10 @@ EggHolder: max_iter = [10, 100, 1000]: [-573.125, -931.596, -931.596]
 
 Visually:
 
-| max_iter = 10                        | max_iter = 100                       |
-| ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240601111707](Pasted%20image%2020240601111707.png) | ![Pasted image 20240601111647](Pasted%20image%2020240601111647.png) |
-| ![Pasted image 20240601111711](Pasted%20image%2020240601111711.png) | ![Pasted image 20240601111652](Pasted%20image%2020240601111652.png) |
+| max_iter = 10                                                           | max_iter = 100                                                          |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| ![Pasted image 20240601111707](img/Pasted%20image%2020240601111707.png) | ![Pasted image 20240601111647](img/Pasted%20image%2020240601111647.png) |
+| ![Pasted image 20240601111711](img/Pasted%20image%2020240601111711.png) | ![Pasted image 20240601111652](img/Pasted%20image%2020240601111652.png) |
 
 ---
 
@@ -92,9 +92,9 @@ Rosenbrock: T = [0.1, 1.0, 10.0] => [1.981e-12, 2.011e-12, 4,112e-12]
 
 Here a visual example:
 
-| T = 0.1                              | T = 1                                | T = 10                               |
-| ------------------------------------ | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240601142807](Pasted%20image%2020240601142807.png) | ![Pasted image 20240601142845](Pasted%20image%2020240601142845.png) | ![Pasted image 20240601142858](Pasted%20image%2020240601142858.png) |
+| T = 0.1                                                                 | T = 1                                                                   | T = 10                                                                  |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| ![Pasted image 20240601142807](img/Pasted%20image%2020240601142807.png) | ![Pasted image 20240601142845](img/Pasted%20image%2020240601142845.png) | ![Pasted image 20240601142858](img/Pasted%20image%2020240601142858.png) |
 
 Also for the `stepsize` parameter, larger step sizes allow for more extensive exploration, so again non-smooth functions with multiple local minima are more influenced by changing this configuration.
 
@@ -105,10 +105,10 @@ Rastrigin: s = [10, 100] => [2.131e-14, 0.995]
 
 Visually, using `EggHolder`
 
-| stepsize = 10                        | stepsize = 100                       | stepsize = 1000                      |
-| ------------------------------------ | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240601143158](Pasted%20image%2020240601143158.png) | ![Pasted image 20240601143143](Pasted%20image%2020240601143143.png) | ![Pasted image 20240601143124](Pasted%20image%2020240601143124.png) |
-| ![Pasted image 20240601143201](Pasted%20image%2020240601143201.png) | ![Pasted image 20240601143147](Pasted%20image%2020240601143147.png) | ![Pasted image 20240601143131](Pasted%20image%2020240601143131.png) |
+| stepsize = 10                                                           | stepsize = 100                                                          | stepsize = 1000                                                         |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| ![Pasted image 20240601143158](img/Pasted%20image%2020240601143158.png) | ![Pasted image 20240601143143](img/Pasted%20image%2020240601143143.png) | ![Pasted image 20240601143124](img/Pasted%20image%2020240601143124.png) |
+| ![Pasted image 20240601143201](img/Pasted%20image%2020240601143201.png) | ![Pasted image 20240601143147](img/Pasted%20image%2020240601143147.png) | ![Pasted image 20240601143131](img/Pasted%20image%2020240601143131.png) |
 
 
 The number of iterations influences the trade-off between exploration and exploitation. Similar to the temperature higher value allows the algorithm to explore more and find the balance, like for the temperature again, is fundamental. 
