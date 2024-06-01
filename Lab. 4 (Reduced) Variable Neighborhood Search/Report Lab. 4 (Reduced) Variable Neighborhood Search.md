@@ -10,7 +10,7 @@ In order to have a good analysis of the effect of the initial solution, I have g
 | `vns_result`                                                              | `vns_result`                    |
 | ------------------------------------------------------------------------- | ------------------------------- |
 | [0. 1. 0. 0. 0. 1. 1. 1. 1. 1.]                                           | [0. 0. 0. 0. 1. 1. 1. 1. 1. 1.] |
-| ![image](img/img1.png%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20) | ![image](img/img2.png%20)       |
+| ![image](img/img1.png) | ![image](img/img2.png)       |
 
 Even with this simple example, we can also observe that the **starting solution is also a sort of exploration-exploitation trade-off**. With a worse starting point, in fact, the algorithm is forced to spend time exploring new zones of the solution space.
 
