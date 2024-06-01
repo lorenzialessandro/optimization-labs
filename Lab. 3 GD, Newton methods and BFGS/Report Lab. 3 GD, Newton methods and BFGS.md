@@ -17,9 +17,9 @@ After different tried the function that seems to be more **sensitive** to the `l
 
 For example using the `Ackley` function, we can see the differences using various learning rates. In particular with a too small one the method is not able to reach a good point, and, with a higher `lr` the convergence is faster, finally with a too big parameter the number of iteration will continue not improving the final result.  
 
-| ![img](Pasted%20image%2020240315102019.png) | ![img](Pasted%20image%2020240315102113.png) | ![img](Pasted%20image%2020240315102133.png) |
+| ![img](img/Pasted%20image%2020240315102019.png) | ![img](img/Pasted%20image%2020240315102113.png) | ![img](img/Pasted%20image%2020240315102133.png) |
 | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- |
-| ![img](Pasted%20image%2020240315102052.png) | ![img](Pasted%20image%2020240315102122.png) | ![img](Pasted%20image%2020240315102142.png) |
+| ![img](img/Pasted%20image%2020240315102052.png) | ![img](img/Pasted%20image%2020240315102122.png) | ![img](img/Pasted%20image%2020240315102142.png) |
 | `lr = 0.01`                                     | `lr = 0.1`                                      | `lr = 0.9`                                      |
 
 `tolereance`:
@@ -42,10 +42,10 @@ Newton Method, using also the curvature information (second derivative), **conve
 
 Using the simplest example, it's possible to observe that using an `Hypersphere` function the number of evaluation needed using Newton Method is (varying the starting point) about a seventh in respect to the Gradient. 
 
-| Gradient Descent                                                        | Newton  Method                                                          |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![Pasted image 20240601155440](Pasted%20image%2020240601155440.png) | ![Pasted image 20240601155447](Pasted%20image%2020240601155447.png) |
-| ![Pasted image 20240601155456](Pasted%20image%2020240601155456.png) | ![Pasted image 20240601155450](Pasted%20image%2020240601155450.png) |
+| Gradient Descent                                                            | Newton  Method                                                              |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| ![img/Pasted image 20240601155440](img/Pasted%20image%2020240601155440.png) | ![img/Pasted image 20240601155447](img/Pasted%20image%2020240601155447.png) |
+| ![img/Pasted image 20240601155456](img/Pasted%20image%2020240601155456.png) | ![img/Pasted image 20240601155450](img/Pasted%20image%2020240601155450.png) |
  
 In general, even using other functions the improvement in convergence of this method is not always clear, also tuning the parameter in the more similar way.
 
@@ -90,11 +90,11 @@ Best location: [0.99997144 0.99994271]
 
 | x0 = [-2., -2.]                      | x0 = [-5., 7.]                       |
 | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240601155928](Pasted%20image%2020240601155928.png) | ![Pasted image 20240601160011](Pasted%20image%2020240601160011.png) |
+| ![img/Pasted image 20240601155928](img/Pasted%20image%2020240601155928.png) | ![img/Pasted image 20240601160011](img/Pasted%20image%2020240601160011.png) |
 
-| eps = 0.0000001                                                         | eps = 0.01                                                              |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![Pasted image 20240601155928](Pasted%20image%2020240601155928.png) | ![Pasted image 20240601160320](Pasted%20image%2020240601160320.png) |
+| eps = 0.0000001                                                             | eps = 0.01                                                                  |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| ![img/Pasted image 20240601155928](img/Pasted%20image%2020240601155928.png) | ![img/Pasted image 20240601160320](img/Pasted%20image%2020240601160320.png) |
 
 
 We know that **computation of the approximate inverse Hessian matrix** is a key element in this optimization process and the main difference between BFGS and L-BFGS lies in how they do that, **L-BFGS is more efficient** since it keeps track of a limited history of previous iterates and gradient differences and not storing the full matrix, as done by BFGS.
