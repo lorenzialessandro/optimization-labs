@@ -1,5 +1,20 @@
 # Report Lab. 4: (Reduced) Variable Neighborhood Search 
 
+**Table of Contents**
+
+- [Variable Neighborhood Search](#variable-neighborhood-search)
+	- [starting point](#starting-point)
+	- [`kmax`](#kmax)
+	- [Generation of neighborhood](#generation-of-neighborhood)
+	- [`local_search`](#local_search)
+- [Reduced Variable Neighborhood Search and Comparison](#reduced-variable-neighborhood-search-and-comparison)
+	- [starting point](#starting-point)
+	- [`kmax`](#kmax)
+	- [Generation of neighborhood](#generation-of-neighborhood)
+- [Conclusion](#conclusion)
+- [Code implementations](#code-implementations)
+
+
 ## Variable Neighborhood Search 
 
 ### starting point
@@ -7,10 +22,10 @@ As seen for most of the optimization search algorithms, a **good starting point*
 
 In order to have a good analysis of the effect of the initial solution, I have generated a random binary vector `initial_point`. Based on the starting solution picked, the number of iterations varies; there are VNS lunches with more than 300 iterations and others with less than 140.
 
-| `vns_result`                                                              | `vns_result`                    |
-| ------------------------------------------------------------------------- | ------------------------------- |
-| [0. 1. 0. 0. 0. 1. 1. 1. 1. 1.]                                           | [0. 0. 0. 0. 1. 1. 1. 1. 1. 1.] |
-| ![image](img/img1.png) | ![image](img/img2.png)       |
+| `vns_result`                    | `vns_result`                    |
+| ------------------------------- | ------------------------------- |
+| [0. 1. 0. 0. 0. 1. 1. 1. 1. 1.] | [0. 0. 0. 0. 1. 1. 1. 1. 1. 1.] |
+| ![image](img/img1.png)          | ![image](img/img2.png)          |
 
 Even with this simple example, we can also observe that the **starting solution is also a sort of exploration-exploitation trade-off**. With a worse starting point, in fact, the algorithm is forced to spend time exploring new zones of the solution space.
 

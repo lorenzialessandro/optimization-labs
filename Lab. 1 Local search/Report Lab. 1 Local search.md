@@ -1,4 +1,17 @@
 # Report Lab. 1: Local search
+
+**Table of Contents**
+
+- [Grid Search](#grid-search)
+- [Random Search](#random-search)
+- [Grid vs Random Search](#grid-vs-random-search)
+- [Nelder Mead Optimization](#nelder-mead-optimization)
+	- [Using different functions](#using-different-functions)
+- [Powell Optimization](#powell-optimization)
+	- [Using different functions](#using-different-functions)
+- [Conclusion](#conclusion)
+
+
 ## Grid Search
 `step_size`: in grid search increase the step size lead to a reduction of the amount of points visited by the search, with small step size in fact we are increasing the "grid movement" needed.
 With small step size the accuracy of the best point obtained is more efficient but the search cost is higher since the number of iterations needed grown exponentially. 
