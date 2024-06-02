@@ -107,7 +107,7 @@ Here we can notice as the running a search process with the same parameters (`it
 
 | T = 1                                                                         | T = 10                                                                                 |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| ![img/Pasted image 20240405164915 1](img/Pasted%20image%2020240405164915%201.png) | ![2e573d0588ab16322fbc0e20a823d715_MD5](2e573d0588ab16322fbc0e20a823d715_MD5.jpeg) |
+| ![img/Pasted image 20240405164915 1](img/Pasted%20image%2020240405164915%201.png) | ![img/2e573d0588ab16322fbc0e20a823d715_MD5](2e573d0588ab16322fbc0e20a823d715_MD5.jpeg) |
 
 In general we want a temperature relatively high at the beginning in order to accept worse solution with more probably when it start.
 
