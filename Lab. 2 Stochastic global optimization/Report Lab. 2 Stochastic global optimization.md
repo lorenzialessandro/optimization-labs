@@ -1,5 +1,7 @@
 # Report Lab. 2: Stochastic global optimization
 
+notebook [optimtech_lab2](optimtech_lab2.ipynb)
+
 **Table of Contents**
 
 - [DIRECT](#direct)
