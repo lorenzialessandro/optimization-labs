@@ -30,7 +30,7 @@ Since in the lab problem we cannot embed some heuristic-based initialization, I 
 | `vns_result`                                                            | `vns_result`                                                            |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | [1 1 0 0 0 0 0 1 1 1]                                                   | [0 1 1 0 1 1 0 0 1 1]                                                   |
-| ![Pasted image 20240405110739](Pasted%20image%2020240405110739.png) | ![Pasted image 20240405110720](Pasted%20image%2020240405110720.png) |
+| ![img/Pasted image 20240405110739](img/Pasted%20image%2020240405110739.png) | ![img/Pasted image 20240405110720](img/Pasted%20image%2020240405110720.png) |
 
 ### `ls_max`
 This parameter is the maximum number of iterations allowed for the local search at each iteration of the algorithm. 
@@ -39,7 +39,7 @@ A higher value of `ls_max` allows the local search to explore the local neighbor
 
 | `ls_max = 1`                         | `ls_max = 50`                        |
 | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240405111403](Pasted%20image%2020240405111403.png) | ![Pasted image 20240405111422](Pasted%20image%2020240405111422.png) |
+| ![img/Pasted image 20240405111403](img/Pasted%20image%2020240405111403.png) | ![img/Pasted image 20240405111422](img/Pasted%20image%2020240405111422.png) |
 
 So **setting `ls_max` too low means not analyzing the current neighborhood structure properly**, on the other side if this parameter is **too large we are wasting iterations** in the structure and we will instead prefer to move on. 
 
@@ -64,7 +64,7 @@ Here we can see the result:
 
 | max strength perturbation            | middle strength perturbation         | min strength perturbation            |
 | ------------------------------------ | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240405121041](Pasted%20image%2020240405121041.png) | ![Pasted image 20240405120920](Pasted%20image%2020240405120920.png) | ![Pasted image 20240405120844](Pasted%20image%2020240405120844.png) |
+| ![img/Pasted image 20240405121041](img/Pasted%20image%2020240405121041.png) | ![img/Pasted image 20240405120920](img/Pasted%20image%2020240405120920.png) | ![img/Pasted image 20240405120844](img/Pasted%20image%2020240405120844.png) |
 | k = 49                               | k = 25                               | k  = 1                               |
 
 This shows that too strong perturbations result in random restart, in particular at the beginning and instead minimum perturbations seem to perform better even if at the start the process introduces less significant changes.
@@ -77,7 +77,7 @@ We can notice that the best improvement performs a more complete search, requiri
 
 | First improvement                                                       | Best improvement                                                        |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![Pasted image 20240405160637](Pasted%20image%2020240405160637.png) | ![Pasted image 20240405160704](Pasted%20image%2020240405160704.png) |
+| ![img/Pasted image 20240405160637](img/Pasted%20image%2020240405160637.png) | ![img/Pasted image 20240405160704](img/Pasted%20image%2020240405160704.png) |
 | 86 iterations                                                           | 289 iterations                                                          |
 
 
@@ -107,7 +107,7 @@ Here we can notice as the running a search process with the same parameters (`it
 
 | T = 1                                                                         | T = 10                                                                                 |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| ![Pasted image 20240405164915 1](Pasted%20image%2020240405164915%201.png) | ![2e573d0588ab16322fbc0e20a823d715_MD5](2e573d0588ab16322fbc0e20a823d715_MD5.jpeg) |
+| ![img/Pasted image 20240405164915 1](img/Pasted%20image%2020240405164915%201.png) | ![2e573d0588ab16322fbc0e20a823d715_MD5](2e573d0588ab16322fbc0e20a823d715_MD5.jpeg) |
 
 In general we want a temperature relatively high at the beginning in order to accept worse solution with more probably when it start.
 
@@ -128,7 +128,7 @@ Here a comparison between Simulated Annealing using the Metropolis criterion and
 
 | without Metropolis criterion                                            | with Metropolis criterion                                               |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![Pasted image 20240405170239](Pasted%20image%2020240405170239.png) | ![Pasted image 20240405170235](Pasted%20image%2020240405170235.png) |
+| ![img/Pasted image 20240405170239](img/Pasted%20image%2020240405170239.png) | ![img/Pasted image 20240405170235](img/Pasted%20image%2020240405170235.png) |
 Using the Metropolis criterion allows for a more balanced exploration of the solution space, potentially leading to the discovery of better solutions and avoiding premature convergence.
 
 ### temperature update and alpha
@@ -136,7 +136,7 @@ The `alpha` parameter (Boltzmann-factor) works as cooling scheduling parameter. 
  
 | `alpha = 0.2`                        | `alpha = 0.8`                        |
 | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240405170758](Pasted%20image%2020240405170758.png) | ![Pasted image 20240405170805](Pasted%20image%2020240405170805.png) |
+| ![img/Pasted image 20240405170758](img/Pasted%20image%2020240405170758.png) | ![img/Pasted image 20240405170805](img/Pasted%20image%2020240405170805.png) |
 In general we want to set it quite large (close to 1) in order to have a slow decreasing of the temperature, and so not stucking near a local minimum.
 
 ---
@@ -160,6 +160,6 @@ There isn't a universally "more efficient" algorithm among ILS, VNS, and SA. The
 
 | ILS                                  | VNS                                  | SA                                   |
 | ------------------------------------ | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240405172224](Pasted%20image%2020240405172224.png) | ![Pasted image 20240405172333](Pasted%20image%2020240405172333.png) | ![Pasted image 20240405172425](Pasted%20image%2020240405172425.png) |
+| ![img/Pasted image 20240405172224](img/Pasted%20image%2020240405172224.png) | ![img/Pasted image 20240405172333](img/Pasted%20image%2020240405172333.png) | ![img/Pasted image 20240405172425](img/Pasted%20image%2020240405172425.png) |
 
 ---
