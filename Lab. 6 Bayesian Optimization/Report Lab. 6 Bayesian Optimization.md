@@ -98,11 +98,13 @@ To summarize, the nature of the objective function plays a crucial role in deter
 
 Here the different behavior of the process using 3 different multimodal functions with PI. The first function has multiple local optima within each period, the second is more complex due to the interaction between the linear and sine terms (so more peaks and valleys) and the last is the more complex since it combines a quadratic term with a sinusoidal term raised to a high power.
 
-| multimodal 1                    | multimodal 2    | multimodal 3    |
-| ------------------------------- | --------------- | --------------- |
-| ![n](img/n.png)                 | ![o](img/o.png) | ![p](img/p.png) |
-|                                 |                 |                 |
-| $\sin(x) + \sin(\frac{10}{3}x)$ |                 |                 |
+| multimodal 1    | multimodal 2    | multimodal 3    |
+| --------------- | --------------- | --------------- |
+| ![n](img/n.png) | ![o](img/o.png) | ![p](img/p.png) |
+
+| multimodal 1                    | multimodal 2           | multimodal 3            |
+| ------------------------------- | ---------------------- | ----------------------- |
+| $\sin(x) + \sin(\frac{10}{3}x)$ | $(1.4-3.0x) \sin(18x)$ | $x^2 + \sin(5 \pi x)^6$ |
 
 We can see how, **with an increasing complexity of the functions, the algorithms need to explore different peaks and valleys to identify all local optima, potentially requiring more evaluations** and, as yet seen, careful exploration and exploitation strategies.
 
