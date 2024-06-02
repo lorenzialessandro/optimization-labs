@@ -1,5 +1,7 @@
 # Report Lab. 1: Local search
 
+notebook [optimtech_lab1](optimtech_lab1.ipynb)
+
 **Table of Contents**
 
 - [Grid Search](#grid-search)
