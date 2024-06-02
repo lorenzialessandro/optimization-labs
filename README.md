@@ -5,3 +5,6 @@
 - [Report Lab. 4 (Reduced) Variable Neighborhood Search](Lab.%204%20(Reduced)%20Variable%20Neighborhood%20Search/Report%20Lab.%204%20(Reduced)%20Variable%20Neighborhood%20Search.md)
 - [Report Lab. 5 Iterated local Search and Simulated Annealing](Lab.%205%20Iterated%20local%20Search%20and%20Simulated%20Annealing/Report%20Lab.%205%20Iterated%20local%20Search%20and%20Simulated%20Annealing.md)
 - [Report Lab. 6 Bayesian Optimization](Lab.%206%20Bayesian%20Optimization/Report%20Lab.%206%20Bayesian%20Optimization.md)
+
+
+![](https://smashdigital.com/wp-content/uploads/2015/08/optimize-all-the-things.jpg)
