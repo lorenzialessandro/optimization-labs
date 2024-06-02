@@ -1,6 +1,6 @@
 # Report Lab. 6 Bayesian Optimization
 
-notebook : [optimtech_lab6.ipynb](optimtech_lab6.ipynb)
+notebook : [optimtech_lab6](optimtech_lab6.ipynb)
 
 **Table of Contents**
 
@@ -21,7 +21,7 @@ Here the analysis on the behavior using the 3 differences prior surrogate functi
 | prior 1          | prior 2                                | prior 3                                |
 | ---------------- | -------------------------------------- | -------------------------------------- |
 | X random array   | X from a uniform distribution [0.5, 1] | X from a uniform distribution [0, 0.5] |
-| ![e](e.png)  | ![d](d.png)                        | ![c](c.png)                        |
+| ![e](img/e.png)  | ![d](img/d.png)                        | ![c](img/c.png)                        |
 | x=0.983, y=1.554 | x=0.966, y=1.489                       | x=0.982, y=1.376                       |
 
   
@@ -41,12 +41,12 @@ Note: I've used different objective function based on the kernel properties.
 | RBF                                                                     | Matérn                                                                  | Rational Quadratic                                                      |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | with `easy_objective`                                                   | with `complex_objective`                                                | with `complex_objective`                                                |
-| ![Pasted image 20240412214310](Pasted%20image%2020240412214310.png) | ![Pasted image 20240412214216](Pasted%20image%2020240412214216.png) | ![Pasted image 20240412214100](Pasted%20image%2020240412214100.png) |
+| ![Pasted image 20240412214310](img/Pasted%20image%2020240412214310.png) | ![Pasted image 20240412214216](img/Pasted%20image%2020240412214216.png) | ![Pasted image 20240412214100](img/Pasted%20image%2020240412214100.png) |
 
 | **Exp-Sine-Squared**                                                    | Constant                                                                | White                                                                   |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | with `multimodal_1`                                                     | with `easy_objective`                                                   | with `complex_objective`                                                |
-| ![Pasted image 20240412214621](Pasted%20image%2020240412214621.png) | ![Pasted image 20240412214741](Pasted%20image%2020240412214741.png) | ![Pasted image 20240412214836](Pasted%20image%2020240412214836.png) |
+| ![Pasted image 20240412214621](img/Pasted%20image%2020240412214621.png) | ![Pasted image 20240412214741](img/Pasted%20image%2020240412214741.png) | ![Pasted image 20240412214836](img/Pasted%20image%2020240412214836.png) |
 
 1. **RBF (Radial Basis Function) Kernel**:
 	- assumes smoothness in the underlying function 
@@ -76,7 +76,7 @@ Different acquisition functions prioritize this trade-off differently and here a
 
 | UCB             | PI              | EI              |
 | --------------- | --------------- | --------------- |
-| ![h](h.png) | ![f](f.png) | ![g](g.png) |
+| ![h](img/h.png) | ![f](img/f.png) | ![g](img/g.png) |
 
 - **Upper Confidence Bound (UCB)**: the parameter `k` controls the balance between exploration and exploitation. Larger values of `k` lead to more exploration. In general UCB tends to explore widely initially and then gradually narrows down the search space as it identifies promising regions, so the balance is related to the mean and standard deviation such that for regions with high mean it search more and for the ones with more uncertainty it try to "escape" 
 - **Probability of Improvement (PI)**: in general it prioritizes exploitation by selecting points with a high probability of improvement over the current best observation. At the PI favors exploitation by focusing on points with a high probability of improvement over the current best observation. 
@@ -100,7 +100,7 @@ Here the different behavior of the process using 3 different multimodal function
 
 | multimodal 1                    | multimodal 2           | multimodal 3            |
 | ------------------------------- | ---------------------- | ----------------------- |
-| ![n](n.png)                 | ![o](o.png)        | ![p](p.png)         |
+| ![n](img/n.png)                 | ![o](img/o.png)        | ![p](img/p.png)         |
 | $\sin(x) + \sin(\frac{10}{3}x)$ | $(1.4-3.0x) \sin(18x)$ | $x^2 + \sin(5 \pi x)^6$ |
 
 We can see how, **with an increasing complexity of the functions, the algorithms need to explore different peaks and valleys to identify all local optima, potentially requiring more evaluations** and, as yet seen, careful exploration and exploitation strategies.
@@ -115,7 +115,7 @@ And that's the Bayesian optimization applied:
 
 | Complex Objective Function | Easy Objective Function |
 | -------------------------- | ----------------------- |
-| ![q](q.png)            | ![r](r.png)         |
+| ![q](img/q.png)            | ![r](img/r.png)         |
  
 
 ## BONUS
@@ -126,7 +126,7 @@ Here a visual example using as kernel `Matern` and acquisition function `EI`
 
 | k = 0.01                                                                | k = 0.1                                                                 | k = 1.0                                                                 |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![Pasted image 20240602151354](Pasted%20image%2020240602151354.png) | ![Pasted image 20240602151401](Pasted%20image%2020240602151401.png) | ![Pasted image 20240602151407](Pasted%20image%2020240602151407.png) |
+| ![Pasted image 20240602151354](img/Pasted%20image%2020240602151354.png) | ![Pasted image 20240602151401](img/Pasted%20image%2020240602151401.png) | ![Pasted image 20240602151407](img/Pasted%20image%2020240602151407.png) |
 
 - k = 0.01: optimization will primarily focus on exploitation
 - k = 0.1: balance between exploration and exploitation
