@@ -1,5 +1,7 @@
 # Report Lab. 4: (Reduced) Variable Neighborhood Search 
 
+notebook [optimtech_lab4](optimtech_lab4.ipynb)
+
 **Table of Contents**
 
 - [Variable Neighborhood Search](#variable-neighborhood-search)
