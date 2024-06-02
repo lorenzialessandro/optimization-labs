@@ -1,5 +1,7 @@
 # Report Lab. 3: GD, Newton methods and BFGS
 
+notebook [optimtech_lab3](optimtech_lab3.ipynb)
+
 **Table of Contents**
 
 - [GRADIENT DESCENT](#gradient-descent)
