@@ -129,6 +129,7 @@ Here a comparison between Simulated Annealing using the Metropolis criterion and
 | without Metropolis criterion                                            | with Metropolis criterion                                               |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | ![img/Pasted image 20240405170239](img/Pasted%20image%2020240405170239.png) | ![img/Pasted image 20240405170235](img/Pasted%20image%2020240405170235.png) |
+
 Using the Metropolis criterion allows for a more balanced exploration of the solution space, potentially leading to the discovery of better solutions and avoiding premature convergence.
 
 ### temperature update and alpha
@@ -137,6 +138,7 @@ The `alpha` parameter (Boltzmann-factor) works as cooling scheduling parameter. 
 | `alpha = 0.2`                        | `alpha = 0.8`                        |
 | ------------------------------------ | ------------------------------------ |
 | ![img/Pasted image 20240405170758](img/Pasted%20image%2020240405170758.png) | ![img/Pasted image 20240405170805](img/Pasted%20image%2020240405170805.png) |
+
 In general we want to set it quite large (close to 1) in order to have a slow decreasing of the temperature, and so not stucking near a local minimum.
 
 ---
