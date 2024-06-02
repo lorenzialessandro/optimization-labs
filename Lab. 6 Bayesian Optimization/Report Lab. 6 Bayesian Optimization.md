@@ -101,7 +101,10 @@ Here the different behavior of the process using 3 different multimodal function
 | multimodal 1                    | multimodal 2           | multimodal 3            |
 | ------------------------------- | ---------------------- | ----------------------- |
 | ![n](img/n.png)                 | ![o](img/o.png)        | ![p](img/p.png)         |
+|                                 |                        |                         |
+
 | $\sin(x) + \sin(\frac{10}{3}x)$ | $(1.4-3.0x) \sin(18x)$ | $x^2 + \sin(5 \pi x)^6$ |
+| ------------------------------- | ---------------------- | ----------------------- |
 
 We can see how, **with an increasing complexity of the functions, the algorithms need to explore different peaks and valleys to identify all local optima, potentially requiring more evaluations** and, as yet seen, careful exploration and exploitation strategies.
 
