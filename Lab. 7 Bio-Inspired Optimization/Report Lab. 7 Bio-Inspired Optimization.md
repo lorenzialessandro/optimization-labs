@@ -30,10 +30,10 @@ Following the [Choosing Mutation and Crossover Ratios for Genetic Algorithms—A
 
 Here a simpler comparison using only mutation and only crossover, with `Ackley` as benchmark function: 
 
-| only mutation                                                           | only crossover                                                          |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![Pasted image 20240419094539](Pasted%20image%2020240419094539.png) | ![Pasted image 20240419094553](Pasted%20image%2020240419094553.png) |
-| ![Pasted image 20240419094627](Pasted%20image%2020240419094627.png) | ![Pasted image 20240419094611](Pasted%20image%2020240419094611.png) |
+| only mutation                                                       | only crossover                                                      |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![Pasted image 20240419094539](img/Pasted%20image%2020240419094539.png) | ![Pasted image 20240419094553](img/Pasted%20image%2020240419094553.png) |
+| ![Pasted image 20240419094627](img/Pasted%20image%2020240419094627.png) | ![Pasted image 20240419094611](img/Pasted%20image%2020240419094611.png) |
 
 Here we can easily see that in this case the mutation run is better than the alone crossover in term of final generation and size of the final population but as sad, the number of iterations is bigger. 
 
@@ -43,16 +43,16 @@ We have instead a better result **combining** them, even if the final population
 
 Here the mutation + crossover combination: 
 
-| ![Pasted image 20240419094716](Pasted%20image%2020240419094716.png) | ![Pasted image 20240419094722](Pasted%20image%2020240419094722.png) |
+| ![Pasted image 20240419094716](img/Pasted%20image%2020240419094716.png) | ![Pasted image 20240419094722](img/Pasted%20image%2020240419094722.png) |
 | ------------------------------------ | ------------------------------------ |
 
 Here an experiment fixing the mutation rate at `0.9` and changing over the crossover rate with various values: 
 
 | 0.0001                               | 0.01                                 |
 | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240419100113](Pasted%20image%2020240419100113.png) | ![Pasted image 20240419100010](Pasted%20image%2020240419100010.png) |
+| ![Pasted image 20240419100113](img/Pasted%20image%2020240419100113.png) | ![Pasted image 20240419100010](img/Pasted%20image%2020240419100010.png) |
 | **0.1**                              | **0.9**                              |
-| ![Pasted image 20240419095756](Pasted%20image%2020240419095756.png) | ![Pasted image 20240419100047](Pasted%20image%2020240419100047.png) |
+| ![Pasted image 20240419095756](img/Pasted%20image%2020240419095756.png) | ![Pasted image 20240419100047](img/Pasted%20image%2020240419100047.png) |
 
 With higher crossover rate (last pic) the algorithm may find better solutions initially due to increased exploration, exploring a larger portion of the search space.
 - ex with `0.1` at generation 4 we have a more "compact" population compares with rate `0.01`
@@ -70,8 +70,8 @@ A large tournament size involves more individuals in each tournament selection s
 
 | `tournament_size = 1`                                                   | `tournament_size = 5`                                                   |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![Pasted image 20240419101306](Pasted%20image%2020240419101306.png) | ![Pasted image 20240419101238](Pasted%20image%2020240419101238.png) |
-| ![Pasted image 20240419101329](Pasted%20image%2020240419101329.png) | ![Pasted image 20240419101326](Pasted%20image%2020240419101326.png) |
+| ![Pasted image 20240419101306](img/Pasted%20image%2020240419101306.png) | ![Pasted image 20240419101238](img/Pasted%20image%2020240419101238.png) |
+| ![Pasted image 20240419101329](img/Pasted%20image%2020240419101329.png) | ![Pasted image 20240419101326](img/Pasted%20image%2020240419101326.png) |
 
 The first run shows that with low size the process maintains genetic diversity in the population, here at the last generations we have a worst solution but it may be more effective in escaping local optima and exploring the search space extensively. 
 
@@ -90,8 +90,8 @@ Here the comparison of GA performance between `Rastrigin` function (multimodal, 
 
 | `Rosenbrock`                                                            | `Rastrigin`                                                             |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![Pasted image 20240419103035](Pasted%20image%2020240419103035.png) | ![Pasted image 20240419102901](Pasted%20image%2020240419102901.png) |
-| ![Pasted image 20240419103025](Pasted%20image%2020240419103025.png) | ![Pasted image 20240419102853](Pasted%20image%2020240419102853.png) |
+| ![Pasted image 20240419103035](img/Pasted%20image%2020240419103035.png) | ![Pasted image 20240419102901](img/Pasted%20image%2020240419102901.png) |
+| ![Pasted image 20240419103025](img/Pasted%20image%2020240419103025.png) | ![Pasted image 20240419102853](img/Pasted%20image%2020240419102853.png) |
 
 ---
 
@@ -109,8 +109,8 @@ Here the proof of these concepts (the population has size = 20).
 
 | `num_offspring = 20`                 | `num_offspring = 200`                |
 | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240419103923](Pasted%20image%2020240419103923.png) | ![Pasted image 20240419103845](Pasted%20image%2020240419103845.png) |
-| ![Pasted image 20240419103930](Pasted%20image%2020240419103930.png) | ![Pasted image 20240419103852](Pasted%20image%2020240419103852.png) |
+| ![Pasted image 20240419103923](img/Pasted%20image%2020240419103923.png) | ![Pasted image 20240419103845](img/Pasted%20image%2020240419103845.png) |
+| ![Pasted image 20240419103930](img/Pasted%20image%2020240419103930.png) | ![Pasted image 20240419103852](img/Pasted%20image%2020240419103852.png) |
 
 ### Mixing number
 The mixing parameter represents the number of parents involved in the creation of each offspring, this means that higher value of it leads to more exploration of the search space (each offspring is generated from a larger pool of parents) allowing for more diverse combinations of genetic material. Conversely a lower value focused the process more on exploitation using a smaller subset of parents.
@@ -121,15 +121,15 @@ Here an example:
 
 | `mixing_number = 1`                  | `mixing_number = 20`                 |
 | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240419104438](Pasted%20image%2020240419104438.png) | ![Pasted image 20240419104511](Pasted%20image%2020240419104511.png) |
+| ![Pasted image 20240419104438](img/Pasted%20image%2020240419104438.png) | ![Pasted image 20240419104511](img/Pasted%20image%2020240419104511.png) |
 
 
 ### Strategies
 
 | None                                 | GLOBAL                               | INDIVIDUAL                           |
 | ------------------------------------ | ------------------------------------ | ------------------------------------ |
-| ![Pasted image 20240419104957](Pasted%20image%2020240419104957.png) | ![Pasted image 20240419104920](Pasted%20image%2020240419104920.png) | ![Pasted image 20240419104939](Pasted%20image%2020240419104939.png) |
-| ![Pasted image 20240419105005](Pasted%20image%2020240419105005.png) | ![Pasted image 20240419104925](Pasted%20image%2020240419104925.png) | ![Pasted image 20240419104943](Pasted%20image%2020240419104943.png) |
+| ![Pasted image 20240419104957](img/Pasted%20image%2020240419104957.png) | ![Pasted image 20240419104920](img/Pasted%20image%2020240419104920.png) | ![Pasted image 20240419104939](img/Pasted%20image%2020240419104939.png) |
+| ![Pasted image 20240419105005](img/Pasted%20image%2020240419105005.png) | ![Pasted image 20240419104925](img/Pasted%20image%2020240419104925.png) | ![Pasted image 20240419104943](img/Pasted%20image%2020240419104943.png) |
 
 - `None`
 	- static search process : exploration and exploitation behavior remains unchanged over iterations
@@ -158,14 +158,14 @@ Using these two functions is possible to observe the different behavior using on
 
 | `PSO`                                | `GA`                                                                    | `ES`                                 |
 | ------------------------------------ | ----------------------------------------------------------------------- | ------------------------------------ |
-| ![Pasted image 20240419110202](Pasted%20image%2020240419110202.png) | ![Pasted image 20240419103025](Pasted%20image%2020240419103025.png) | ![Pasted image 20240419110255](Pasted%20image%2020240419110255.png) |
-| ![Pasted image 20240419110210](Pasted%20image%2020240419110210.png) | ![Pasted image 20240419103035](Pasted%20image%2020240419103035.png) | ![Pasted image 20240419110306](Pasted%20image%2020240419110306.png) |
+| ![Pasted image 20240419110202](img/Pasted%20image%2020240419110202.png) | ![Pasted image 20240419103025](img/Pasted%20image%2020240419103025.png) | ![Pasted image 20240419110255](img/Pasted%20image%2020240419110255.png) |
+| ![Pasted image 20240419110210](img/Pasted%20image%2020240419110210.png) | ![Pasted image 20240419103035](img/Pasted%20image%2020240419103035.png) | ![Pasted image 20240419110306](img/Pasted%20image%2020240419110306.png) |
 #### Rastrigin
 
 | `PSO`                                                                   | `GA`                                                                    | `ES`                                                                    |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![Pasted image 20240419170132](Pasted%20image%2020240419170132.png) | ![Pasted image 20240419110430](Pasted%20image%2020240419110430.png) | ![Pasted image 20240419110508](Pasted%20image%2020240419110508.png) |
-| ![Pasted image 20240419170139](Pasted%20image%2020240419170139.png) | ![Pasted image 20240419110447](Pasted%20image%2020240419110447.png) | ![Pasted image 20240419110521](Pasted%20image%2020240419110521.png) |
+| ![Pasted image 20240419170132](img/Pasted%20image%2020240419170132.png) | ![Pasted image 20240419110430](img/Pasted%20image%2020240419110430.png) | ![Pasted image 20240419110508](img/Pasted%20image%2020240419110508.png) |
+| ![Pasted image 20240419170139](img/Pasted%20image%2020240419170139.png) | ![Pasted image 20240419110447](img/Pasted%20image%2020240419110447.png) | ![Pasted image 20240419110521](img/Pasted%20image%2020240419110521.png) |
 
 #### Conclusion 
 **PSO** is effective in finding global optima in smooth and convex fitness landscapes like the Rosenbrock function, in this case it is the most computationally efficient and the easier to implement. However, even with this function keeping population diversity can be challenging in PSO.
@@ -180,10 +180,10 @@ Using these two functions is possible to observe the different behavior using on
 
 Here an example with `Ackley` showing different variations of  `pop_size` / `max_generations`:
 
-| 125/20                                                                  | 50/50                                                                   | 20/125                                                                  |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| ![Pasted image 20240419170836](Pasted%20image%2020240419170836.png) | ![Pasted image 20240419170525](Pasted%20image%2020240419170525.png) | ![Pasted image 20240419170803](Pasted%20image%2020240419170803.png) |
-| ![Pasted image 20240419170840](Pasted%20image%2020240419170840.png) | ![Pasted image 20240419170529](Pasted%20image%2020240419170529.png) | ![Pasted image 20240419170808](Pasted%20image%2020240419170808.png) |
+| 125/20                                                              | 50/50                                                               | 20/125                                                              |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![Pasted image 20240419170836](img/Pasted%20image%2020240419170836.png) | ![Pasted image 20240419170525](img/Pasted%20image%2020240419170525.png) | ![Pasted image 20240419170803](img/Pasted%20image%2020240419170803.png) |
+| ![Pasted image 20240419170840](img/Pasted%20image%2020240419170840.png) | ![Pasted image 20240419170529](img/Pasted%20image%2020240419170529.png) | ![Pasted image 20240419170808](img/Pasted%20image%2020240419170808.png) |
 
 With other benchmark functions is possible to see different result so the optimal choice depends on the specific problem. One thing that we can say is that the **the adjustment of the population size have a more significant impact** on the algorithm's behavior. 
 
