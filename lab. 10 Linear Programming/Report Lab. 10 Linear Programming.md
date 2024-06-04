@@ -1,6 +1,6 @@
 # Report Lab. 10 Linear Programming
 
-notebook : [optimtech_lab10](University/5%20Optimization%20techniques/lab/Lab.%2010%20Linear%20Programming/optimtech_lab10.ipynb)
+notebook : [optimtech_lab10](optimtech_lab10.ipynb)
 
 **Table of Contents**
 
@@ -75,7 +75,7 @@ Units of Y to produce: 35
 ```
 
 
-![Pasted image 20240517103416](University/5%20Optimization%20techniques/lab/Lab.%2010%20Linear%20Programming/img/Pasted%20image%2020240517103416.png)
+![Pasted image 20240517103416](img/Pasted%20image%2020240517103416.png)
 
 ---
 
@@ -122,7 +122,7 @@ Chairs to produce: 10
 Tables to produce: 15
 ```
 
-![Pasted image 20240517112011](University/5%20Optimization%20techniques/lab/Lab.%2010%20Linear%20Programming/img/Pasted%20image%2020240517112011.png)
+![Pasted image 20240517112011](img/Pasted%20image%2020240517112011.png)
 
 
 ---
