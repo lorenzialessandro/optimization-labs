@@ -8,3 +8,4 @@
 - [Report Lab. 5 Iterated local Search and Simulated Annealing](Lab.%205%20Iterated%20local%20Search%20and%20Simulated%20Annealing/Report%20Lab.%205%20Iterated%20local%20Search%20and%20Simulated%20Annealing.md)
 - [Report Lab. 6 Bayesian Optimization](Lab.%206%20Bayesian%20Optimization/Report%20Lab.%206%20Bayesian%20Optimization.md)
 - [Report Lab. 7 Bio-Inspired Optimization](Lab.%207%20Bio-Inspired%20Optimization/Report%20Lab.%207%20Bio-Inspired%20Optimization.md)
+- [Report Lab. 8 Multi-Objective Optimization](Lab.%208%20Multi-Objective%20Optimization/Report%20Lab.%208%20Multi-Objective%20Optimization.md)
