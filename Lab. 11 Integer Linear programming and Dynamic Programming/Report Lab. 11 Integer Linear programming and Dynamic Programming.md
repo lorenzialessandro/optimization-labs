@@ -1,6 +1,6 @@
 # Report Lab. 11 Integer Linear programming and Dynamic Programming
 
-notebook : [optimtech_lab11](University/5%20Optimization%20techniques/optimization-labs/Lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming/optimtech_lab11.ipynb)
+notebook : [optimtech_lab11](optimtech_lab11.ipynb)
 
 **Table of Contents**
 
@@ -17,7 +17,7 @@ notebook : [optimtech_lab11](University/5%20Optimization%20techniques/optimizati
 
 In order to see how the complexity increase with the increasing of the number of queens (`N`) I plot the different values of the time to solve the problem (`elapsed_time = time.time() - initial_time`) at the different stage. 
 
-![Pasted image 20240524104116](University/5%20Optimization%20techniques/optimization-labs/Lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming/img/Pasted%20image%2020240524104116.png)
+![Pasted image 20240524104116](img/Pasted%20image%2020240524104116.png)
 
 We can see that the using more than 60 queens the elapsed time start increasing quite fast and over the 80 the algorithm start struggling a lot. 
 
@@ -28,15 +28,15 @@ These example show the resulting path using different numbers of nodes.
 
 |                                                                         |                                                                             |
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| ![Pasted image 20240524155208](University/5%20Optimization%20techniques/optimization-labs/Lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming/img/Pasted%20image%2020240524155208.png) | ![Pasted image 20240524155219](University/5%20Optimization%20techniques/optimization-labs/Lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming/img/Pasted%20image%2020240524155219.png)<br> |
-| ![Pasted image 20240524155234](University/5%20Optimization%20techniques/optimization-labs/Lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming/img/Pasted%20image%2020240524155234.png) | ![Pasted image 20240524155246](University/5%20Optimization%20techniques/optimization-labs/Lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming/img/Pasted%20image%2020240524155246.png)     |
-| ![Pasted image 20240524155649](University/5%20Optimization%20techniques/optimization-labs/Lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming/img/Pasted%20image%2020240524155649.png) | ![Pasted image 20240524155438](University/5%20Optimization%20techniques/optimization-labs/Lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming/img/Pasted%20image%2020240524155438.png)     |
+| ![Pasted image 20240524155208](img/Pasted%20image%2020240524155208.png) | ![Pasted image 20240524155219](img/Pasted%20image%2020240524155219.png)<br> |
+| ![Pasted image 20240524155234](img/Pasted%20image%2020240524155234.png) | ![Pasted image 20240524155246](img/Pasted%20image%2020240524155246.png)     |
+| ![Pasted image 20240524155649](img/Pasted%20image%2020240524155649.png) | ![Pasted image 20240524155438](img/Pasted%20image%2020240524155438.png)     |
 
 
 ## Knapsack Problem | DP
 Here we can see how the number of subproblems changes, changing the total capacity and the number of objects:
 
-![Pasted image 20240524115823](University/5%20Optimization%20techniques/optimization-labs/Lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming/img/Pasted%20image%2020240524115823.png)
+![Pasted image 20240524115823](img/Pasted%20image%2020240524115823.png)
 
 - As the capacity of the knapsack increases, the number of subproblems increase since with a larger capacity there are more possible combinations of items to consider.
 - Similarly, as the number of objects increases, the number of subproblems also tends to increase because again with more objects there are more possible combinations to consider.
