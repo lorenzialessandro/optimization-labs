@@ -9,5 +9,7 @@
 - [Report Lab. 6 Bayesian Optimization](Lab.%206%20Bayesian%20Optimization/Report%20Lab.%206%20Bayesian%20Optimization.md)
 - [Report Lab. 7 Bio-Inspired Optimization](Lab.%207%20Bio-Inspired%20Optimization/Report%20Lab.%207%20Bio-Inspired%20Optimization.md)
 - [Report Lab. 8 Multi-Objective Optimization](Lab.%208%20Multi-Objective%20Optimization/Report%20Lab.%208%20Multi-Objective%20Optimization.md)
-- 
+- [Report Lab. 9 Design of Experiments](Lab.%209%20Design%20of%20Experiments/Report%20Lab.%209%20Design%20of%20Experiments.md)
 - [Report Lab. 10 Linear Programming](lab.%2010%20Linear%20Programming/Report%20Lab.%2010%20Linear%20Programming.md)
+- [Report Lab. 11 Integer Linear programming and Dynamic Programming](lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming/Report%20Lab.%2011%20Integer%20Linear%20programming%20and%20Dynamic%20Programming.md)
+- [Report Lab. 12 Robust Optimization](lab.%2012%20Robust%20Optimization/Report%20Lab.%2012%20Robust%20Optimization.md)
